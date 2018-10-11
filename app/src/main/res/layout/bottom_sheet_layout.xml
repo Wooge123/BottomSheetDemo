@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/tvFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ico_facebook"
+        android:drawableLeft="@drawable/ico_facebook"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Facebook"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/facebookView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd"
+        app:layout_constraintTop_toBottomOf="@id/tvFacebook" />
+
+    <TextView
+        android:id="@+id/tvTwitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ico_twitter"
+        android:drawableLeft="@drawable/ico_twitter"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Twitter"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/facebookView" />
+
+    <View
+        android:id="@+id/twitterView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd"
+        app:layout_constraintTop_toBottomOf="@id/tvTwitter" />
+
+    <TextView
+        android:id="@+id/tvInstagram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ico_instagram"
+        android:drawableLeft="@drawable/ico_instagram"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Instagram"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTwitter" />
+
+    <View
+        android:id="@+id/instagramView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd"
+        app:layout_constraintTop_toBottomOf="@id/tvInstagram" />
+
+    <TextView
+        android:id="@+id/tvLinkedIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ico_linkedin"
+        android:drawableLeft="@drawable/ico_linkedin"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="LinkedIn"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/instagramView" />
+
+</android.support.constraint.ConstraintLayout>
